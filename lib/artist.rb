@@ -15,6 +15,10 @@ class Artist
     @songs
   end
 
-  
+  def genre
+    self.songs.collect do |song|
+      song.genre 
+    end
+  end
 
 end
